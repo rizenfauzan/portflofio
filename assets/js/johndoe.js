@@ -55,6 +55,30 @@ $(window).on("load", function() {
     });
 });
 
+// protfolio filters
+$(window).on("load", function() {
+  var t = $(".myskill-container");
+  t.isotope({
+      filter: ".networking",
+      animationOptions: {
+          duration: 750,
+          easing: "linear",
+          queue: !1
+      }
+  }), $(".filters a").click(function() {
+      $(".filters .active").removeClass("active"), $(this).addClass("active");
+      var i = $(this).attr("data-filter");
+      return t.isotope({
+          filter: i,
+          animationOptions: {
+              duration: 750,
+              easing: "linear",
+              queue: !1
+          }
+      }), !1
+  });
+});
+
 
 // google maps
 function initMap() {
