@@ -563,6 +563,15 @@ pre code {
   margin-left: auto;
 }
 
+.container-resume {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -11268,6 +11277,113 @@ p {
   visibility: visible;
 }
 
+.myskill .filters {
+  border-bottom: 2px solid #dee2e6;
+  border-radius: 0;
+  padding-bottom: 4px;
+  margin: 0 auto 20px;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myskill .filters a {
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  display: block;
+  color: #212529;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: .7;
+  padding: 4px 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.myskill .filters a:first-child {
+  margin-left: 0;
+}
+
+.myskill .filters a:last-child {
+  margin-right: 0;
+}
+
+.myskill .filters a:hover {
+  opacity: .9;
+}
+
+.myskill .filters a.active {
+  opacity: 1;
+  background: #F85C70;
+  color: #fff;
+}
+
+.myskill .myskill-container .myskill-item {
+  position: relative;
+  /* padding-left: 0; */
+  /* padding-right: 0; */
+  /* margin: 10px -5px; */
+  overflow: hidden;
+  /* border-radius: 2px; */
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: flex;
+}
+
+.myskill .myskill-container .myskill-item .content-holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(248, 92, 112, 0.8);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.myskill .content-holder .title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.myskill .content-holder .subtitle {
+  font-weight: 500;
+  opacity: 1;
+  color: #fff;
+}
+
+.myskill .myskill-container .myskill-item:hover .content-holder {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* blog wrapper */
 .blog-card {
   display: -webkit-box;
@@ -11432,6 +11548,7 @@ pre .code {
   z-index: 2;
   box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
   width: 170px;
+  height: 170px;
   border-radius: 50%;
 }
 
@@ -11460,6 +11577,157 @@ pre .code {
   bottom: 0;
   opacity: 1;
 }
+
+.certificate .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
+.certificate .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.certificate .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.certificate .icon-box .icon img {
+  /* font-size: 36px; */
+  transition: 0.5s;
+  position: relative;
+}
+
+.certificate .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.certificate .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+
+.certificate .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  /* font-size: 22px; */
+}
+
+.certificate .icon-box h4 a {
+  color: #45505b;
+  transition: ease-in-out 0.3s;
+}
+
+.certificate .icon-box .exp {
+  background: #f7f8f9;
+}
+
+.certificate .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.certificate .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+.certificate .iconbox-blue {
+  border: 1px solid #47aeff;
+  border-radius: 5px;
+}
+
+.certificate .iconbox-blue:hover .icon i {
+  color: #fff;
+}
+
+.certificate .iconbox-blue:hover .icon path {
+  fill: #47aeff;
+}
+
+.certificate .iconbox-orange {
+  border: 1px solid #ffa76e;
+  border-radius: 5px;
+}
+
+.certificate .iconbox-orange:hover .icon i {
+  color: #fff;
+}
+
+.certificate .iconbox-orange:hover .icon path {
+  fill: #ffa76e;
+}
+
+.certificate .iconbox-pink {
+  border: 1px solid #e80368;
+  border-radius: 5px;
+  /* color: #e80368; */
+}
+
+.certificate .iconbox-pink:hover .icon i {
+  color: #fff;
+}
+
+.certificate .iconbox-pink:hover .icon path {
+  fill: #e80368;
+}
+
+.certificate .iconbox-yellow {
+  border: 1px solid #ffbb2c;
+  border-radius: 5px;
+  /* color: #ffbb2c; */
+}
+
+.certificate .iconbox-yellow:hover .icon i {
+  color: #fff;
+}
+
+.certificate .iconbox-yellow:hover .icon path {
+  fill: #ffbb2c;
+}
+
+.certificate .iconbox-red {
+  border: 1px solid #ff5828;
+  border-radius: 5px;
+  /* color: #ff5828; */
+}
+
+.certificate .iconbox-red:hover .icon i {
+  color: #fff;
+}
+
+.certificate .iconbox-red:hover .icon path {
+  fill: #ff5828;
+}
+
+.certificate .iconbox-teal {
+  border: 1px solid #11dbcf;
+  border-radius: 5px;
+  /* color: #11dbcf; */
+}
+
+.certificate .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+
+.certificate .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+
 
 .navbar.affix .brand-img {
   top: -10px;
@@ -11506,8 +11774,8 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/banner.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/banner.JPG);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11601,6 +11869,11 @@ pre .code {
 
 .section {
   padding: 80px 0;
+}
+
+.section-resume {
+  padding-top: 0px 0;
+
 }
 
 .section.bg-custom-gray {
